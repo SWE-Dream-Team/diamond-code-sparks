@@ -1,0 +1,3 @@
+[submodule "arduino_website"]
+	path = arduino_website
+	url = https://github.com/SWE-Dream-Team/diamond-code-sparks.git
