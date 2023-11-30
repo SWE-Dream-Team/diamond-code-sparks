@@ -23,7 +23,7 @@ export default function DisplayAddCircuitModal() {
 
   const links = new String(image)
   let items = links.split("\n").filter(item => item != "" || item != " ")
-  let width = items.length * 700
+  let width = 3000
   return (
     <div
       onMouseEnter={onHover}
@@ -43,7 +43,8 @@ export default function DisplayAddCircuitModal() {
           </Button>,
         ]}
       >
-        <div id="code-display-text">
+              <div id="code-display-text">
+                  <iframe src="http://localhost:4000" height="1000" width="3000"></iframe>
         </div>
       </Modal>
     </div>
