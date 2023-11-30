@@ -24,7 +24,7 @@ const BlocklyCanvasPanel = ({ activity, isSandbox, setActivity }) => {
       />;
     case 'ContentCreator':
       return (
-        <ContentCreatorCanvas
+          <ContentCreatorCanvas
           activity={activity}
           setActivity={setActivity}
           isSandbox={isSandbox}

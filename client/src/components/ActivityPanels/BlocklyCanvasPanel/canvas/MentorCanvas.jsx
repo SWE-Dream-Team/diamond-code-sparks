@@ -422,7 +422,8 @@ export default function MentorCanvas({ activity, isSandbox, setActivity,  isMent
                 </Row>
               </Col>
             </Row>
-            <div id='blockly-canvas' />
+                      <div id='blockly-canvas'>
+                      </div>
           </Spin>
           </div>
            {!isSandbox && !isMentorActivity && (

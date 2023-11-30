@@ -160,7 +160,7 @@ export default function PublicCanvas({ activity, isSandbox }) {
         <div
           id='bottom-container'
           className='flex flex-column vertical-container overflow-visible'
-        >
+              >
           <Spin
             tip='Compiling Code Please Wait... It may take up to 20 seconds to compile your code.'
             className='compilePop'
@@ -268,10 +268,11 @@ export default function PublicCanvas({ activity, isSandbox }) {
                   </Col>
                 </Row>
               </Col>
-            </Row>
-            <div id='blockly-canvas' />
-          </Spin>
-        </div>
+                      </Row>
+                      <div id='blockly-canvas'>
+                      </div>
+                  </Spin>
+              </div>
         <ConsoleModal
           show={showConsole}
           connectionOpen={connectionOpen}
@@ -285,7 +286,7 @@ export default function PublicCanvas({ activity, isSandbox }) {
           setPlotData={setPlotData}
           plotId={plotId}
         />
-      </div>
+          </div>
 
       {/* This xml is for the blocks' menu we will provide. Here are examples on how to include categories and subcategories */}
       <xml id='toolbox' is='Blockly workspace'>

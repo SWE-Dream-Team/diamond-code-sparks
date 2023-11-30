@@ -1,5 +1,6 @@
 import { Modal, Button } from "antd"
 import React, { useState } from "react"
+import DisplayAddCircuitModal from "./DisplayAddCircuitModal"
 
 export default function DisplayDiagramModal(props) {
   const [visible, setVisible] = useState(false)
@@ -19,7 +20,7 @@ export default function DisplayDiagramModal(props) {
   }
 
   const handleOk = () => {
-    setVisible(false)
+      setVisible(false)
   }
 
   const links = new String(image)
@@ -70,9 +71,7 @@ export default function DisplayDiagramModal(props) {
         onCancel={handleCancel}
         width={width}
         footer={[
-          <Button key="ok" type="primary" onClick={handleOk}>
-            OK
-          </Button>,
+            <DisplayAddCircuitModal/>
         ]}
       >
         <div id="code-display-text">

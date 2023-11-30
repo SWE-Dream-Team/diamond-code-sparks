@@ -99,7 +99,7 @@ const App = () => {
         <Route
           path='/activity'
           element={
-            <PrivateRoute>
+              <PrivateRoute>
               <BlocklyPage isSandbox={false} />
             </PrivateRoute>
           }
